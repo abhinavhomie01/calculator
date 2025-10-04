@@ -14,3 +14,38 @@ body{
     overflow: hidden;
     padding: 20px;
 }
+#screen{
+    background-color: black;
+    padding: 20px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+#expression{
+    min-height: 24px;
+    font-size: 1.2rem;
+    color: white;
+    word-wrap: break-word;
+}
+#display{
+    width: 100%;
+    color: white;
+    font-size: 3.6rem;
+    text-align: right;
+    box-sizing: border-box;
+}
+#buttons{
+    display: grid;
+    grid-auto-columns: repeat(4,1fr);
+    gap:15px;
+}
+button{
+    height: 50px;
+    border-radius: 20px;
+    background-color: rgb(105,104,104);
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition : all 0.1s ease-in-out; 
+    border :none;
+}
