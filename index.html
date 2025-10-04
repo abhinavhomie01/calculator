@@ -13,27 +13,31 @@
             <div id="display"></div>
         </div>
         <div id="buttons">
-            <button>AC</button>
-            <button>DEL</button>
-            <button>%</button>
-            <button>/</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>*</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>-</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>+</button>
-            <button>0</button>
-            <button>.</button>
-            <button>=</button>
+            <button onclick="clearDisplay()">AC</button>
+            <button onclick="deletelast()">DEL</button>
+            <button onclick="appendOperator('%')">%</button>
+            <button onclick="appendOperator('/')">/</button>
+
+            <button onclick="appendnumber('7')">7</button>
+            <button onclick="appendnumber('8')">8</button>
+            <button onclick="appendnumber('9')">9</button>
+            <button onclick="appendOperator('*')">*</button>
+
+            <button onclick="appendnumber('4')">4</button>
+            <button onclick="appendnumber('5')">5</button>
+            <button onclick="appendnumber('6')">6</button>
+            <button onclick="appendOperator('-')">-</button>
+
+            <button onclick="appendnumber('1')">1</button>
+            <button onclick="appendnumber('2')">2</button>
+            <button onclick="appendnumber('3')">3</button>
+            <button onclick="appendOperator('+')">+</button>
+            <button onclick="appendnumber('0')">0</button>
+            <button onclick="appendnumber('.')">.</button>
+            <button onclick="calculate()">=</button>
 
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
